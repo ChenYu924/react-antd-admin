@@ -1,0 +1,27 @@
+@import "@/global";
+
+.menu-wrapper {
+  height: 100vh;
+  overflow: auto;
+
+  :global(.ant-menu-inline) {
+    border-inline-end: none !important;
+  }
+
+  :global(.ant-menu-vertical) {
+    border-inline-end: none !important;
+  }
+
+  .logo-wrapper {
+    .element-sticky();
+    height: 64px;
+    padding: @space-sm;
+
+    .logo {
+      height: 100%;
+      background-color: @placeholder-box-color;
+      border-radius: @radius-md;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+/* 定义变量 */
+// 间距
+@space-xs: 8px;
+@space-sm: 16px;
+@space-md: 24px;
+@space-lg: 32px;
+// 圆角
+@radius-xs: 2px;
+@radius-sm: 4px;
+@radius-md: 8px;
+@radius-lg: 16px;
+
+// 主要颜色，用于链接、按钮、选中的元素等
+@primary-color: #1890ff;
+// 成功状态的颜色，用于成功的消息、成功的状态指示等
+@success-color: #52c41a;
+// 警告状态的颜色，用于警告的消息、警告的状态指示等
+@warning-color: #faad14;
+// 错误状态的颜色，用于错误的消息、错误的状态指示等
+@error-color: #f5222d;
+// 高亮颜色，用于重要的文字和活动区域的背景
+@highlight-color: #f5222d;
+// 禁用状态的颜色，用于禁用的元素和不可用的文字
+@disabled-color: rgba(0, 0, 0, 0.25);
+// 基础边框颜色，用于大多数边框
+@border-color-base: #d9d9d9;
+// 边框颜色
+@border-color-grey: #e8e8e8;
+// 分割线颜色，用于列表和卡片等元素的分割线
+@border-color-split: #f0f0f0;
+// 基础背景色，用于表格等元素的背景
+@background-color-base: #f5f5f5;
+// 浅色背景色，用于表格的斑马线等元素的背景
+@background-color-light: #fafafa;
+// 占位元素背景色
+@placeholder-box-color: #334454;
+// 底色
+@under-color: #f5f5f5;
+// 文本色
+@text-color-main: rgba(0, 0, 0, 0.88);
+@text-color-secondary: rgba(0, 0, 0, 0.65);
+@text-color-thirdly: rgba(0, 0, 0, 0.45);
+
+// 旋转时间
+@animation-rotate-duration: 0.5s;
+
+/* 定义混合 */
+// 浮动-全居中
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// 元素粘滞
+.element-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+// 超出省略号
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 全局样式修改 */
+// 全局滚动条样式
+::-webkit-scrollbar {
+  width: @radius-md;
+  height: @radius-md;
+}
+// 滚动条轨道
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+// 滚动条滑块
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+// 滚动条滑块：鼠标悬停
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 通用样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// 通用内容盒（白色背景、圆角）
+.common-box {
+  min-height: 100%;
+  padding: @space-sm;
+  border-radius: @radius-md;
+  background-color: #fff;
+}
+// 返回顶部（悬浮按钮）
+.back-top-position {
+  right: @space-lg;
+  bottom: @space-lg;
+}

@@ -1,0 +1,32 @@
+@import "@/global";
+
+// sider右边框阴影
+@right-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+// header下边框阴影
+@bottom-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+
+.primary-layout {
+  min-width: 1200px;
+
+  .sider {
+    .element-sticky();
+    z-index: 2;
+    height: 100vh;
+    box-shadow: @right-shadow;
+  }
+
+  .main {
+    min-height: 100vh;
+
+    .header {
+      .element-sticky();
+      background-color: #fff;
+      padding: 0 @space-sm;
+      box-shadow: @bottom-shadow;
+    }
+
+    .content {
+      padding: @space-sm;
+    }
+  }
+}
