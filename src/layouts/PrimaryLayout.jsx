@@ -21,7 +21,7 @@ function PrimaryLayout() {
   useEffect(() => {
     // 根据获取到的token再去接口中获取用户信息
     request.get("/user").then((res) => {
-      const userData = res.data.data;
+      const userData = res.data;
       dispatch({ type: "user-slice/setUser", payload: userData });
     });
   }, []); // eslint-disable-line react-hooks/exhaustive-deps

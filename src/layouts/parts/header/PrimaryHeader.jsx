@@ -1,7 +1,7 @@
 import { Button } from "antd";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import styles from "@/layouts/styles/PrimaryHeader.module.less";
-import UserArea from "@/components/UserArea/UserArea";
+import UserArea from "@/components/userArea/UserArea";
 
 function PrimaryHeader({ collapsed, setCollapsed }) {
   return (

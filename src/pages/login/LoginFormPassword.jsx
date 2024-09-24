@@ -29,7 +29,6 @@ function LoginFormPassword() {
           if (res.data.code === 200) {
             const userToken = res.data.data;
             dispatch({ type: "user-slice/setToken", payload: userToken });
-            // 跳转至首页
             navigate("/workbench");
           } else if (res.data.code === 401) {
             message.error("用户名或密码错误");

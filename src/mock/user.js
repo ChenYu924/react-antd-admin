@@ -27,6 +27,17 @@ export const userData = {
       ],
     },
     {
+      key: "table",
+      label: "Table 表格",
+      menuIco: "table",
+      children: [
+        {
+          key: "table-three",
+          label: "查询-表格-介绍",
+        },
+      ],
+    },
+    {
       key: "carousel",
       label: "Carousel 走马灯",
       menuIco: "stepForward",
@@ -56,6 +67,16 @@ export const userData = {
       ],
     },
     {
+      key: "table",
+      label: "Table 表格",
+      children: [
+        {
+          key: "table-three",
+          label: "查询-表格-介绍",
+        },
+      ],
+    },
+    {
       key: "carousel",
       label: "Carousel 走马灯",
       menuIco: "stepForward",
@@ -69,10 +90,16 @@ export const userData = {
     { key: "test1", label: "test1", menuIco: "closed" },
     { key: "test2", label: "test2", menuIco: "closed" },
   ],
-  menuList: ["/workbench", "/form-splice", "/carousel-horizontal"],
+  menuList: [
+    "/workbench",
+    "/form-splice",
+    "/table-three",
+    "/carousel-horizontal",
+  ],
   menuListAll: [
     "/workbench",
     "/form-splice",
+    "/table-three",
     "/carousel-horizontal",
     "/test1",
     "/test2",

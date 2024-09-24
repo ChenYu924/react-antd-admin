@@ -65,6 +65,19 @@ service.interceptors.request.use(
   },
 );
 
+// 拦截器-请求完成后
+service.interceptors.response.use(
+  (res) => {
+    if (res.config.responseType === "blob") {
+      return res;
+    }
+    return res.data;
+  },
+  (err) => {
+    return Promise.reject(err);
+  },
+);
+
 function get(url, params, config) {
   return service.get(url, { params, ...config });
 }

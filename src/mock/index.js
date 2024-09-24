@@ -24,3 +24,15 @@ Mock.mock("/api/user", "get", () => {
     data: userData,
   };
 });
+
+// TableThree组件-表格中各状态列表数目
+Mock.mock("/api/tableThree/total", "get", () => {
+  return {
+    code: 200,
+    data: {
+      0: 12,
+      1: 5,
+      2: 67,
+    },
+  };
+});
